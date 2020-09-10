@@ -43,26 +43,26 @@ public class Konversi {
 
             }
         }
-                
+
     }
 
     public static void detikKeHari(long detik) {
-        
+
         //hari
-        int hari = (int) (detik / (60*60*24));
-        
+        int hari = (int) (detik / (60 * 60 * 24));
+
         //jam
-        detik %= (60*60*24);
+        detik %= (60 * 60 * 24);
         int jam = (int) (detik / (60 * 60));
-        
+
         //menit
         detik %= (60 * 60);
         int menit = (int) (detik / 60);
-        
+
         //detik
         detik %= 60;
-        
-        System.out.println(hari+" Hari, "+jam+"jam , "+menit+" menit, "+detik+" detik");
+
+        System.out.println(hari + " Hari, " + jam + "jam , " + menit + " menit, " + detik + " detik");
 
     }
 
@@ -70,10 +70,10 @@ public class Konversi {
         long menit = jam * 60;
         System.out.println("Menit: " + menit);
     }
-    
+
     public static void hourToMinutes(long hours) {
         long minutes = TimeUnit.HOURS.toMinutes(hours);
-        System.out.println("Minutes: "+minutes);
+        System.out.println("Minutes: " + minutes);
     }
 
     public static void secondToDays(long seconds) {
