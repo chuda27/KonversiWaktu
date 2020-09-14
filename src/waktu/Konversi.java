@@ -85,7 +85,8 @@ public class Konversi {
         long second = TimeUnit.SECONDS.toSeconds(seconds)
                 - TimeUnit.MINUTES.toSeconds(TimeUnit.SECONDS.toMinutes(seconds));
 
-        System.out.println("Day " + day + " Hour " + hours + " Minute " + minute + " Seconds " + second);
+        System.out.println("Day " + day + ", Hour " + hours + ", Minute " 
+                + minute + ", Seconds " + second);
     }
 
 }
