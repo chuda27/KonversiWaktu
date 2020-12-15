@@ -31,13 +31,13 @@ public class Konversi {
                 if (options.nextInt() == 1) {
                     System.out.println("Masukkan jam :");
                     Scanner hours = new Scanner(System.in);
-                    //jamKeMenit(hours.nextInt());
-                    hourToMinutes(hours.nextInt());
+                    jamKeMenit(hours.nextInt());
+                    //hourToMinutes(hours.nextInt());
                 } else {
                     System.out.println("Masukkan detik :");
                     try (Scanner seconds = new Scanner(System.in)) {
-                        detikKeHari(seconds.nextLong());
-                        //secondToDays(seconds.nextLong());
+                        //detikKeHari(seconds.nextLong());
+                        secondToDays(seconds.nextLong());
                     }
                 }
 
